@@ -6,6 +6,8 @@ from pages.cart_subtotal_page import CartSubtotal
 from pages.shopping_cart_page import ShopCart
 from pages.bestsellers_page import BestSellers
 from pages.whole_foods_deals_page import WholeFoodsDeals
+from pages.sign_in_page import SignIn
+from pages.hamburger_menu_pop_up import HamburgerMenuPopUp
 
 class Application:
 
@@ -19,3 +21,5 @@ class Application:
         self.shopping_cart_page = ShopCart(self.driver)
         self.bestsellers_page = BestSellers(self.driver)
         self.whole_foods_deals_page = WholeFoodsDeals(self.driver)
+        self.sign_in_page = SignIn(self.driver)
+        self.hamburger_menu_pop_up = HamburgerMenuPopUp(self.driver)
